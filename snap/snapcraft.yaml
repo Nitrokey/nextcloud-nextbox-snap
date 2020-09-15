@@ -1,6 +1,6 @@
-name: nextcloud
+name: nextcloud-nextbox
 version: git
-summary: Nextcloud Server - A safe home for all your data
+summary: Nitrokey Nextbox Nextcloud Server
 description: |
  Access, share and protect your files, calendars, contacts, communication and
  more at home and in your enterprise.
@@ -11,10 +11,10 @@ base: core18
 
 architectures:
   - build-on: amd64
-  - build-on: i386
+  #- build-on: i386
   - build-on: arm64
-  - build-on: armhf
-  - build-on: ppc64el
+  #- build-on: armhf
+  #- build-on: ppc64el
 
 apps:
   # Apache daemon
