@@ -26,7 +26,7 @@ $CONFIG = array(
 	 * This directory is writable, meant for apps installed by the user.
 	 */
 	array(
-		'path'=> $snap_data_current.'/nextcloud/extra-apps',
+		'path'=> '/media/nextcloud/extra-apps',
 		'url' => '/extra-apps',
 		'writable' => true,
 	),
@@ -53,6 +53,6 @@ $CONFIG = array(
 ),
 
 'log_type' => 'file',
-'logfile' => $snap_data_current.'/logs/nextcloud.log',
+'logfile' => '/media/logs/nextcloud.log',
 'logfilemode' => 0640,
 );

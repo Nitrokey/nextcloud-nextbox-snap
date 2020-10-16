@@ -3,8 +3,12 @@
 # shellcheck source=src/common/utilities/common-utilities
 . "$SNAP/utilities/common-utilities"
 
-export NEXTCLOUD_CONFIG_DIR="$SNAP_DATA/nextcloud/config"
-export NEXTCLOUD_DATA_DIR="$SNAP_COMMON/nextcloud/data"
+#export NEXTCLOUD_CONFIG_DIR="$SNAP_DATA/nextcloud/config"
+#export NEXTCLOUD_DATA_DIR="$SNAP_COMMON/nextcloud/data"
+
+export NEXTCLOUD_CONFIG_DIR="/media/nextcloud/config"
+export NEXTCLOUD_DATA_DIR="/media/nextcloud/data"
+
 DEFAULT_CRONJOB_INTERVAL="5m"
 
 nextcloud_is_configured()
