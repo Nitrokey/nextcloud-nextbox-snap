@@ -53,6 +53,6 @@ $CONFIG = array(
 ),
 
 'log_type' => 'file',
-'logfile' => '/media/logs/nextcloud.log',
+'logfile' => $snap_data_current.'/logs/nextcloud.log',
 'logfilemode' => 0640,
 );
