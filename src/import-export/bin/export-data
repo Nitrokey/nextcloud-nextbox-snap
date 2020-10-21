@@ -16,7 +16,7 @@ fi
 wait_for_mysql
 
 COMMAND="nextcloud.export"
-BACKUP_DIRECTORY="${SNAP_COMMON}/backups"
+BACKUP_DIRECTORY="/media/backup"
 FORMAT="1"
 
 print_usage()

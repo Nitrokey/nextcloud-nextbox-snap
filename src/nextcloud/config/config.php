@@ -26,7 +26,7 @@ $CONFIG = array(
 	 * This directory is writable, meant for apps installed by the user.
 	 */
 	array(
-		'path'=> '/media/nextcloud/extra-apps',
+		'path'=> $snap_data_current.'/nextcloud/extra-apps',
 		'url' => '/extra-apps',
 		'writable' => true,
 	),
