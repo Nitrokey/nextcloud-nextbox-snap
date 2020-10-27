@@ -39,7 +39,7 @@ import_apps()
 	apps_backup="${backup_dir}/apps"
 	run_command "Clearing existing non-default apps" rm -rf "$SNAP_DATA/nextcloud/extra-apps"
 	echo "Importing apps..."
-	if ! rsync -ah --info=progress2 "$apps_backup/" "$SNAP_DATA/nextcloud/extra-apps"; then
+	if ! rsync -ah --info=progress "$apps_backup/" "$SNAP_DATA/nextcloud/extra-apps"; then
 		echo "Unable to import apps"
 		exit 1
 	fi
@@ -86,7 +86,7 @@ import_data()
 	data_backup="${backup_dir}/data"
 	run_command "Clearing existing data" rm -rf "$NEXTCLOUD_DATA_DIR"
 	echo "Importing data..."
-	if ! rsync -ah --info=progress2 "$data_backup/" "$NEXTCLOUD_DATA_DIR"; then
+	if ! rsync -ah --info=progress "$data_backup/" "$NEXTCLOUD_DATA_DIR"; then
 		echo "Unable to import data"
 		exit 1
 	fi
