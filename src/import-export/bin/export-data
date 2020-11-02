@@ -131,6 +131,8 @@ backup="${BACKUP_DIRECTORY}/$(date +%Y%m%d-%H%M%S)"
 mkdir -p "$backup"
 chmod 750 "$backup"
 
+echo "Exporting init... ($backup)"
+
 echo "$FORMAT" > "${backup}/format"
 
 # Enable maintenance mode so data can't change out from under us
@@ -155,6 +157,8 @@ fi
 if [ "$do_export_data" = true ]; then
 	export_data "$backup"
 fi
+
+du -hs "$backup" > ${backup}/size
 
 echo ""
 echo "Successfully exported $backup"
