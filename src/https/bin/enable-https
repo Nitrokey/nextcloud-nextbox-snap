@@ -107,7 +107,7 @@ handle_lets_encrypt()
 #		domains="$domains -d $domain"
 #	done
 
-  mail=$1
+  email=$1
 	shift
   domains=""
   for domain in "$@";
