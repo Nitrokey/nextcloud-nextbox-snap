@@ -115,7 +115,7 @@ activate_certbot_certificate()
 	certdir=$1
 
 	deactivate_certificates
-	ln -s "$CERTBOT_LIVE_DIRECTORY/$certdir" "$LIVE_CERTS_DIRECTORY"
+	ln -s "$CERTBOT_LIVE_DIRECTORY/${certdir}/" "$LIVE_CERTS_DIRECTORY"
 	restart_apache_if_running
 }
 
