@@ -51,6 +51,7 @@ handle_lets_encrypt()
 		echo "Looks like you're ready for HTTPS!"
 	else
 		activate_certbot_certificate $main_domain
+		echo ENABLE-HTTPS RUNNING: activate_certbot_certificate $main_domain
 	fi
 }
 
