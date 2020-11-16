@@ -20,7 +20,6 @@ handle_lets_encrypt()
 
   email=$1
 	shift
-	main_domain=$1
   domains=""
   for domain in "$@";
 	do
@@ -50,8 +49,7 @@ handle_lets_encrypt()
 	if [ "$dry_run" = true ]; then
 		echo "Looks like you're ready for HTTPS!"
 	else
-		activate_certbot_certificate $main_domain
-		echo ENABLE-HTTPS RUNNING: activate_certbot_certificate $main_domain
+		activate_certbot_certificate
 	fi
 }
 
