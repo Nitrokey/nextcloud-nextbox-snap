@@ -131,6 +131,20 @@ hooks:
   pre-refresh:
     plugs: [network, network-bind, removable-media]
 
+slots:
+  nextcloud-execs:
+    interface: content
+    content: executables
+     source:
+       read: 
+         - $SNAP/bin
+
+  nextcloud-data:
+    interface: content
+    content: writable-data
+    write: 
+      - $SNAP_DATA
+
 parts:
   apache:
     plugin: apache
