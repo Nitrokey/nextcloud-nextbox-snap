@@ -180,7 +180,7 @@ parts:
 
     filesets:
       exclude:
-        - -man
+        #- -man
         - -manual
         - -htdocs
         - -include
