@@ -135,9 +135,8 @@ slots:
   nextcloud-execs:
     interface: content
     content: executables
-     source:
-       read: 
-         - $SNAP/bin
+    read: 
+      - $SNAP/bin
 
   nextcloud-data:
     interface: content
